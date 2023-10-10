@@ -10,3 +10,39 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .login-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+
+  .login-form {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+/* Laptop/Desktop styles */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .login-form {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

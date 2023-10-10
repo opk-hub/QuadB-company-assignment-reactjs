@@ -35,12 +35,10 @@ class JobList extends Component {
         }
       } catch (error) {
         console.error(error)
-        // Handle the error here
       }
     }
   }
 
-  // Function to handle checkbox change
   handleCheckboxChange = () => {
     this.setState(prevState => ({isRemoteChecked: !prevState.isRemoteChecked}))
   }

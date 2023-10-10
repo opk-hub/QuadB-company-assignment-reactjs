@@ -7,6 +7,7 @@ import JobDetail from './components/JobDetail'
 import ApplyJob from './components/ApplyJob'
 import SuccessPage from './components/SuccessPage'
 import LoginForm from './components/Auth/LoginForm'
+import './App.css'
 
 function App() {
   return (

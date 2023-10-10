@@ -37,52 +37,54 @@ function ApplyJob() {
 
   return (
     <div>
-      <h2>Apply for the Job</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="coverLetter">Cover Letter:</label>
-          <textarea
-            id="coverLetter"
-            name="coverLetter"
-            className="textarea"
-            value={formData.coverLetter}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="resume">Resume:</label>
-          <input
-            type="file"
-            id="resume"
-            name="resume"
-            onChange={handleFileChange}
-          />
-          {title}
-        </div>
-        <button className="button" type="submit">
-          Submit
-        </button>
-      </form>
+      <center>
+        <h2>Apply for the Job</h2>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="name">Name:</label> <br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="email">Email:</label> <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="coverLetter">Cover Letter:</label> <br />
+            <textarea
+              id="coverLetter"
+              name="coverLetter"
+              className="textarea"
+              value={formData.coverLetter}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="resume">Resume:</label> <br />
+            <input
+              type="file"
+              id="resume"
+              name="resume"
+              onChange={handleFileChange}
+            />
+            {title}
+          </div>
+          <button className="button" type="submit">
+            Submit
+          </button>
+        </form>
+      </center>
     </div>
   )
 }
